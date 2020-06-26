@@ -1,10 +1,11 @@
 import React from 'react';
-import './App.css';
+import  Logo   from "./components/Logo/Logo";
+
 
 function App() {
   return (
     <div className="App">
-        <h1>Hello there</h1>
+        <Logo />
     </div>
   );
 }
