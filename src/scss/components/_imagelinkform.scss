@@ -1,0 +1,100 @@
+.link-container{
+    max-width: 100rem;
+    display: block;
+    margin: 5.5rem auto 0 auto;
+    z-index: 10;
+}
+
+.paragraph{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    color: $color-grey-dark;
+}
+
+.btn{
+    flex: 0 0 20%;
+    align-self: flex-start;
+
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.3rem 4rem;
+    background-color: $color-primary;
+    color: $color-grey-light-1;
+    transition: all 0.2s;
+
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 0 10px 20px rgba($color-black, .30);
+    }
+    &:focus,
+    &:active{
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba($color-black, .20);
+    }
+   
+}
+
+.form{
+    margin-top: 1.5rem;
+    padding: 8rem 8rem;
+    background-color: $color-grey-light-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    &__group{
+        flex: 0 0 70%;
+    }
+
+    &__input{
+        display: block;
+        font-family: inherit;
+        color: inherit;
+        font-size: 1.6rem;
+        padding: 1rem 2rem;
+        border-radius: 3px;
+        border: none;
+        width: 100%;
+        border-bottom: 3px solid transparent;
+        display: block;
+        transition: all 0.3s;
+        
+        &:focus{
+            outline: none;
+            border-bottom: 3px solid $color-primary;
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+            &:invalid{
+                border-bottom: 3px solid $color-secondary-dark;
+            }
+        }
+    
+        &::-webkit-input-placeholder{
+            color: $color-grey-dark-2;
+        }
+    }
+
+    &__label{
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        text-align: left;
+        transition: all 0.3s;
+    }
+    //since the label is adjacent to input 
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4.5rem);
+    }
+}
