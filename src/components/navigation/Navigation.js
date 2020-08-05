@@ -5,7 +5,8 @@ const Navigation = () =>{
         <nav className="navbar">
             <ul className="navbar__list">
                 <li className="navbar__item">
-                    <a href="#" className="navbar__link">Sign Out</a>
+                    {/** /# will remove the warning from console  */}
+                    <a href="/#" className="navbar__link">Sign Out</a>
                 </li>
             </ul>
         </nav>

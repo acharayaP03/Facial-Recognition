@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ImageLinkForm = () =>{
+const ImageLinkForm = ({onInputChange, onButtonSubmit}) =>{
     return(
         <div className="link-container">
             <p className='paragraph'>
@@ -8,10 +8,10 @@ const ImageLinkForm = () =>{
             </p>
             <form className="form">
                 <div className="form__group">
-                    <input id="imageInput" type="text" className="form__input" placeholder="Insert Image" />
+                    <input onChange={onInputChange} id="imageInput" type="text" className="form__input" placeholder="Insert Image" />
                     <label className="form__label" htmlFor="imageInput">Insert Image</label>
                 </div>
-                <button className="btn">Detect</button>
+                <button type='button' className="btn" onClick={onButtonSubmit}>Detect</button>
             </form>
         </div>
     );
