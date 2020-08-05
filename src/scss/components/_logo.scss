@@ -1,0 +1,21 @@
+.logo-box {
+    top: 4rem;
+    left: 4rem;
+    position: absolute;
+    cursor: pointer;
+    
+    .Tilt{
+        padding:3.5rem 3.5rem;
+        border-radius: 3px;
+        border: 1px solid $color-grey-dark;
+        box-shadow: 0 1rem 3.5rem rgba($color: #000000, $alpha: .2);
+        position: relative;
+    }    
+    img{
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        width:70%;
+        display: block;
+    }
+}
