@@ -17,6 +17,8 @@ $color-grey-dark-2: #999;
 $color-white: #fff;
 $color-black: #000;
 
+$default-font-size: 1.6rem;
+
 $box-shadow: 0 5px 10px rgba($color-black, .20);
 
 
@@ -89,6 +91,12 @@ body{
     margin: 0 auto 1rem auto;
     
     &-2{
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &-4{
+        font-size: 2.5rem;
         text-transform: uppercase;
         text-align: center;
     }

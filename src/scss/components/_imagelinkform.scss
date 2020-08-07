@@ -13,37 +13,6 @@
     }
 }
 
-.btn{
-    flex: 0 0 20%;
-    align-self: flex-start;
-
-    display: block;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.3rem 4rem;
-    background-color: $color-primary;
-    color: $color-grey-light-1;
-    transition: all 0.2s;
-
-    border: none;
-    cursor: pointer;
-
-    &:hover{
-        transform: translateY(-1px);
-        box-shadow: $box-shadow;
-    }
-    &:focus{
-        outline: none;
-        transform: translateY(-1px);
-        box-shadow: $box-shadow;
-    }
-
-    &-signin{
-        margin: 0 auto;
-    }
-   
-}
-
 .form{
     margin-top: 1.5rem;
     padding: 4rem 4rem 2rem 4rem;
