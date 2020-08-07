@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Signin = ({ onButtonSubmit }) =>{
+const Signin = ({ onRouteChange }) =>{
 
     return(
         <div className="link-container">
@@ -14,7 +14,9 @@ const Signin = ({ onButtonSubmit }) =>{
                     <input id="password" type="password" className="form__input" placeholder="Password" />
                     <label className="form__label" htmlFor="imageInput">Password</label>
                 </div>
-                <button  type="button" className="btn btn-singin" style={{margin : '0 auto'}}>Sign In</button>
+                {/* donot use call onRouteChange on onClick, it will run no matter what, instead only run it when it is clicked. */}
+                <button  type="button" className="btn" onClick={() => onRouteChange('home')}>Sign In</button>
+                <a href="/#" className="btn-text" style={{float: 'right'}} onClick={() => onRouteChange('register')}>Register</a>
             </form>
         </div>
     );
