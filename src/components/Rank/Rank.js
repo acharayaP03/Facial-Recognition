@@ -2,10 +2,10 @@ import React from 'react'
 
 const Rank = () =>{
     return(
-        <div className="link-container">
-            <p className='paragraph'>
+        <div className="link-container form">
+            <h4 className='paragraph'>
                 {'Trishten, your rank is .....'}
-            </p>
+            </h4>
             <p className='paragraph'>
                 {'#4'}
             </p>
