@@ -8,6 +8,10 @@ const Navigation = () =>{
                     {/** /# will remove the warning from console  */}
                     <a href="/#" className="navbar__link">Sign Out</a>
                 </li>
+                <li className="navbar__item">
+                    {/** /# will remove the warning from console  */}
+                    <a href="/#" className="navbar__link">Register</a>
+                </li>
             </ul>
         </nav>
     )

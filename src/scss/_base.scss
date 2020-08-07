@@ -17,6 +17,8 @@ $color-grey-dark-2: #999;
 $color-white: #fff;
 $color-black: #000;
 
+$box-shadow: 0 5px 10px rgba($color-black, .20);
+
 
 * ,
 *::after,
@@ -73,4 +75,30 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     cursor: pointer; 
+}
+
+.d-block{
+    display: block;
+}
+
+//utility Classes
+.heading{
+    display: block;
+    color: inherit;
+    font-size: 3.5rem;
+    margin: 0 auto 1rem auto;
+    
+    &-2{
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+
+.paragraph{
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+    color: $color-grey-dark;
+    margin-bottom: 1.5rem;
 }

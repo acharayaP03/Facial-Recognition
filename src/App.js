@@ -7,6 +7,8 @@ import app from './API'
 import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm";
 import Navigation from "./components/navigation/Navigation";
 import FaceRecognition from "./components/FaceRecognition/FaceRecognition";
+import Signin from "./components/Forms/Signin";
+import Register from "./components/Forms/Rejister";
 
 class App extends Component {
 
@@ -69,6 +71,8 @@ class App extends Component {
                           }}} className="particles"/>
           <Logo />
           <Navigation />
+          <Signin onButtonSubmit={ this.onButtonSubmit }/>
+          <Register />
           <Rank />
           <ImageLinkForm onInputChange= {this.onInputChange} onButtonSubmit={this.onButtonSubmit}/>
           <FaceRecognition imageUrl={this.state.imageUrl} box={this.state.box}/>

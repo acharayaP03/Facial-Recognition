@@ -13,14 +13,6 @@
     }
 }
 
-
-.paragraph{
-    display: block;
-    text-align: center;
-    font-size: 2rem;
-    color: $color-grey-dark;
-}
-
 .btn{
     flex: 0 0 20%;
     align-self: flex-start;
@@ -38,12 +30,16 @@
 
     &:hover{
         transform: translateY(-1px);
-        box-shadow: 0 10px 20px rgba($color-black, .30);
+        box-shadow: $box-shadow;
     }
     &:focus{
         outline: none;
         transform: translateY(-1px);
-        box-shadow: 0 5px 10px rgba($color-black, .20);
+        box-shadow: $box-shadow;
+    }
+
+    &-signin{
+        margin: 0 auto;
     }
    
 }
@@ -51,11 +47,27 @@
 .form{
     margin-top: 1.5rem;
     padding: 4rem 4rem 2rem 4rem;
-    background-color: $color-grey-light-1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    background-color: rgba($color-grey-light-1, 0.8);
+    box-shadow: $box-shadow;
+
+    &__imgLink{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__row{
+        display: block;
+        flex: 0 0 70%;
+    }
+
+    &__text{
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+    }
 
 
     &__group{
