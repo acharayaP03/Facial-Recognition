@@ -4,13 +4,13 @@ class Register extends Component {
     constructor(props){
         super(props)
         this.state ={
-            name: '',
+            fullname: '',
             email: '',
             password: ''
         }
     }
     onNameChange = (event) =>{
-        this.setState({ name : event.target.value});
+        this.setState({ fullname : event.target.value});
     }
     onEmailChange = (event) =>{
         this.setState({ email : event.target.value});
@@ -25,7 +25,7 @@ class Register extends Component {
             method: 'post',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify({
-                name: this.state.name,
+                fullname: this.state.fullname,
                 email: this.state.email,
                 password: this.state.password
             })

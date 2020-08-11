@@ -22,7 +22,7 @@ class App extends Component {
       isSignedIn: false,
       user: {
           id: '',
-          name : '',
+          fullname : '',
           email : '',
           entries : 0,
           joined : ''
@@ -34,7 +34,7 @@ class App extends Component {
     this.setState({
       user: {
           id: data.id,
-          name : data.name,
+          fullname : data.fullname,
           email : data.email,
           entries : data.entries,
           joined : data.joined
@@ -120,7 +120,7 @@ class App extends Component {
           {
             this.state.route === 'home'
             ? <div> 
-                <Rank name={this.state.user.name}  entries={ this.state.user.entries }/>
+                <Rank fullname={this.state.user.fullname}  entries={ this.state.user.entries }/>
                 <ImageLinkForm onInputChange= {this.onInputChange} onButtonSubmit={this.onButtonSubmit}/>
                 <FaceRecognition imageUrl={this.state.imageUrl} box={this.state.box}/>
               </div>
